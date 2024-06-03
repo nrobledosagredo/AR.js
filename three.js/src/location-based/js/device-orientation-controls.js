@@ -140,8 +140,8 @@ class DeviceOrientationControls extends EventDispatcher {
               heading
               ? 360 - heading
               : device.alpha || 0) + scope.alphaOffset
-          : 0; // Z
-
+          : 0; // Z 
+        
         let beta = device.beta ? MathUtils.degToRad(device.beta) : 0; // X'
 
         let gamma = device.gamma ? MathUtils.degToRad(device.gamma) : 0; // Y''
